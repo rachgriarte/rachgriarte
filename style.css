@@ -33,7 +33,7 @@ html, body {
 }
 .row1:hover , .row2:hover {
     border: 5px solid #FFFFFF;
-    font-size: 55px; 
+    font-size: 40px; 
     text-align: center;
     color: #889B0A;
 }
@@ -103,4 +103,13 @@ html, body {
 .input-field .prefix.active {
     color: #000;    
 }
-       
+
+/* Navigation Bar */
+#navbar {
+    font-size: 20px;
+    color: #074F65;
+}
+#navbar:hover {
+    color: #889B0A;
+    text-decoration: line-through;
+}

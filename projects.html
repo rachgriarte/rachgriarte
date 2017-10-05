@@ -1,70 +1,66 @@
 <!doctype html>
 <html>
 	<head>
+		<title>Rachel Griarte | Projects</title>
+		<link rel="shortcut icon" href="images/rach.jpg"/>
 		<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript" src="js/turn.js"></script>
-        <!-- Materealize Link -->
-         <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-  
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-            
-    <style type="text/css">
-        body {
-            background: black;
-            text-align: center;
-            color: #BFE5F0;
-            font-size: 30px;
-		}
-        .carousel {
-            background: URL("images/city.jpg");
-            background-attachment: fixed;
-				background-position: center;
-				background-repeat: no-repeat;
-				background-size: cover;
-        }
-        .carousel .carousel-item {
-            width: 250px !important;
-            height: 250px !important;
-        }
-        .text {
-            visibility: hidden;
-        }
-
-        .carousel .carousel-item:hover {
-            border: 3px solid #FF0000;
-            height: auto;
-        }
-        .text: hover {
-            visibility: visible;
-            background: black;
-            color: yellow;
-        }
-        
-    </style>
+		<!-- Materealize Link - Compiled and minified CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<!-- Materealize Link - Compiled and minified JavaScript -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 	</head>
 	<body>
-            <div class="navbar">
-                <a href="about.html">about</a>
-                <a href="index.html">main</a>
-                <a href="hobby.html">hobby</a>
-            </div>
-        PROJECTS 
-        <!-- Carousel -->
-        <div class="carousel">
-            <a class="carousel-item" href="google.com"><img src="https://lorempixel.com/250/250/nature/1"></a>
-            <a class="carousel-item" href="facebook.com"><img src="https://lorempixel.com/250/250/nature/2"></a>
-            <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
-            <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
-            <a class="carousel-item" href="#five!"><img src="images/bg.jpg" height="100" width="900">
-                <div class="text">hey guys</div></a>
-        </div>
-        <!-- Carousel -->
-        <script type="text/javascript">  
-            $(document).ready(function(){
-              $('.carousel').carousel();
-            });
-        </script>
+         <!-- Navbar -->
+         [ <a href="index.html" id="navbar">home</a> , 
+         <a href="about.html" id="navbar">about me </a>]
+         <br>
+         <div class="row">
+             PROJECTS
+         </div>
+        <ul class="collection">
+            <!-- ///////////////PROJECT 1 //////////////////-->
+            <li class="collection-item avatar">
+                <img src="images/yuna.jpg" alt="" class="circle">
+                <span class="title">DRUM KIT</span>
+                <p>
+                    Play A Beat At The Beach! 
+                    <br>
+                    Want to enjoy a view of a beautiful beach?
+                </p>
+                <a href="https://rachgriarte.github.io/DrumKit-/" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+             <!-- /////////////// PROJECT 2 ////////////////-->
+            <li class="collection-item avatar">
+                <i class="material-icons circle">folder</i>
+                <span class="title">RAGE</span>
+                <p>
+                    Romantic Advice Given to Everyone
+                    <br>
+                    I give my two cents on the dating scene & don't forget to read some of my xeperieces!
+                </p>
+                <a href="#!" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+             <!-- /////////////// PROJECT 3 /////////////// -->
+            <li class="collection-item avatar">
+                <i class="material-icons circle green">insert_chart</i>
+                <span class="title">WEBCAM</span>
+                <p>
+                    Throwback to the old days!
+                </p>
+                <a href="#!" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+             <!-- /////////////// PROJECT 4 /////////////// -->
+            <li class="collection-item avatar">
+                <i class="material-icons circle red">play_arrow</i>
+                <span class="title">Title</span>
+                <p>First Line <br>
+                    Second Line
+                </p>
+                <a href="http://materializecss.com/collections.html" class="secondary-content"><i class="material-icons">call_made</i></a>
+            </li>
+        </ul>
     </body>
 </html>
