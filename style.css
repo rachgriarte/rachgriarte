@@ -1,5 +1,5 @@
 html, body {
-    margin: 5px;
+    margin: 0px;
     padding: 5px 30px;
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
@@ -47,7 +47,7 @@ html, body {
     font-size: 35px; 
 }
 .material-icons:hover { 
-    color: #889B0A;
+    color: #80683F;
     font-size: 45px; 
 }
 .info {
@@ -67,7 +67,7 @@ html, body {
     margin: 1px;
 }
 #socialmedia:hover {
-    border-bottom: 5px solid #889B0A;
+    border-bottom: 5px solid #80683F;
     padding-bottom: 5px;
     height: 50px;
     width: 40px;
@@ -103,6 +103,7 @@ html, body {
 .input-field .prefix.active {
     color: #000;    
 }
+/* //////////////// PROJECTS PAGE /////////////////// */
 
 /* Navigation Bar */
 #navbar {
@@ -110,6 +111,27 @@ html, body {
     color: #074F65;
 }
 #navbar:hover {
-    color: #889B0A;
+    color: #80683F;
     text-decoration: line-through;
+}
+.row-1 {
+    color: rgba(148, 109, 78, 0.86);
+    font-size: 20px;
+}
+#projectIcon {
+    width: 50px;
+    height: 50px;
+}
+li {
+    font-size: 15px;
+    color: #80683F;
+}
+li:hover {
+    border-left: 2px solid #80683F;
+}
+a.secondary-content {
+    color: #80683F;
+}
+element.style {
+    color: #80683F;
 }
