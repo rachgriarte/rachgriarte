@@ -7,35 +7,41 @@ html, body {
 .row {
     text-align: center;
     color: #074F65;
-    font-size: 30px;
+    font-size: 25px;
 }
 /* Rachel's About Me Page */
 .row1 {
-    background-image: URL("images/4.jpg");
-    min-height: 230px;
+    background-image: URL("images/portimg.jpg");
+    min-height: 245px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border: .5px solid black;
+    border-bottom: 0px;    
     font-size: 0px; 
 }
 /* Rachel's Projects Page */
 .row2 {
-    background-image: URL("images/4.jpg");
-    min-height: 230px;
+    background-image: URL("images/portimg.jpg");
+    min-height: 245px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border: .5px solid black;
+    border-top: 0px;
     font-size: 0px; 
 }
 .row1:hover , .row2:hover {
-    border: 5px solid #FFFFFF;
-    font-size: 40px; 
-    text-align: center;
-    color: #889B0A;
+    border: 10px solid #FFFFFF;
+    font-size: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+a {
+    color: #000000;
 }
 /* Contacts */
 .footer {
@@ -115,7 +121,7 @@ html, body {
     text-decoration: line-through;
 }
 .row-1 {
-    color: rgba(148, 109, 78, 0.86);
+    color: #074F65;
     font-size: 20px;
 }
 #projectIcon {

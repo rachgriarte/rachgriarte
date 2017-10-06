@@ -1,3 +1,11 @@
+// When someone hovers on this div, go to the about page
+$('.row1').click(function() {
+    window.location.href = "about.html"; 
+});
+// When someone hovers on this div, go to the projects page
+$('.row2').click(function() {
+    window.location.href = "projects.html"; 
+});
 //Hide the info and social media
 $('.info').hide();
 $('.socialmedia').hide();
