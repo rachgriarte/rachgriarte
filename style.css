@@ -8,6 +8,7 @@ html, body {
     text-align: center;
     color: #074F65;
     font-size: 25px;
+    margin-bottom: 70px;
 }
 /* Rachel's About Me Page */
 .row1 {
@@ -67,16 +68,14 @@ a {
     margin-bottom: 60px;
 }
 #socialmedia {
-    width: 37px;
-    height: 37px;
+    width: 50px;
+    height: 50px;
     float: left;
     margin: 1px;
 }
 #socialmedia:hover {
-    border-bottom: 5px solid #80683F;
-    padding-bottom: 5px;
-    height: 50px;
-    width: 40px;
+    background: #80683F;
+    border-radius: 50%;
 }
 /* Email/Message */
 .input-field {
@@ -108,6 +107,38 @@ a {
 /* icon prefix focus color */
 .input-field .prefix.active {
     color: #000;    
+}
+/* //////////////// ABOUT ME PAGE /////////////////// */
+.carousel-item {
+  padding: 20px 230px;
+}
+.black-text {
+    background: rgba(192, 192, 192, .7);
+    padding: 20px;
+}
+#one {
+    background-image: URL("images/1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#two {
+    background-image: URL("images/2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#three {
+    background-image: URL("images/3.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#four {
+    background-image: URL("images/4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* //////////////// PROJECTS PAGE /////////////////// */
 
