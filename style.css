@@ -8,7 +8,7 @@ html, body {
     text-align: center;
     color: #074F65;
     font-size: 25px;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 /* Rachel's About Me Page */
 .row1 {
@@ -45,6 +45,14 @@ a {
     color: #000000;
 }
 /* Contacts */
+#contactme {
+    background: rgb(232, 232, 232);
+    color: #074F65;
+}
+#contactme:hover {
+    background: #074F65;
+    color: white;
+}
 .footer {
     color: black;
     text-align: center;
@@ -64,22 +72,29 @@ a {
     padding: 10px;
 }
 /* social media icon */
+#sendit {
+    background: #26a69a;
+}
+#sendit:hover {
+    background: white;
+    color: #26a69a;
+}
 .socialmedia {
     margin-bottom: 60px;
 }
 #socialmedia {
-    width: 50px;
-    height: 50px;
-    float: left;
+    width: 40px;
+    height: 40px;
+    float: right;
     margin: 1px;
 }
 #socialmedia:hover {
-    background: #80683F;
-    border-radius: 50%;
+    border-bottom: 5px solid #26a69a;
 }
 /* Email/Message */
 .input-field {
     width: 700px;
+    color: black;
 }
   /* label color */
 .input-field label {
@@ -89,6 +104,7 @@ a {
 .input-field input[type=text]:focus + label {
     color: #888888;
 }
+
 /* label underline focus color */
 .input-field input[type=text]:focus {
     border-bottom: 1px solid #000;
