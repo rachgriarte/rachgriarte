@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html style="width: 2000"; "height:100vh";>
 	<head>
 		<title>Rachel Griarte | About Me</title>
 		 <!--Import Google Icon Font-->
@@ -19,29 +19,35 @@
         [ <a href="index.html" id="navbar">home</a> , 
         <a href="projects.html" id="navbar">projects </a>]
         <br>
-        <div class="row">
+        <div class="roww">
             ABOUT ME
-        </div>
-		<div class="carousel carousel-slider center" data-indicators="true">
-			<div class="carousel-item black-text" id="one">
-			<h2>Hello, my name is Rachel</h2>
-				<p class="black-text">
-					I’m a web developer. I spend my whole day, practically every day, experimenting with HTML, CSS, and JavaScript; dabbling with frameworks; and inhaling a wide variety of potentially useless information through a few hundred RSS feeds. I build websites that delight and inform. I do it well.
-					I’m curious, and I enjoy work that challenges me to learn something new and stretch in a different direction. I do my best to stay on top of changes in the state of the art so that I can meet challenges with tools well suited to the job at hand.
+		</div>
+		<div class="row">
+			<div class="col s4">
+				<ul class="collapsible popout" data-collapsible="accordion">
+						<li>
+						<div class="collapsible-header"><i class="material-icons">filter_1</i>UI/UX Enthusiast</div>
+						<div class="collapsible-body"><span style="font-size: 13px">I began my passion for coding, specifically the UI/UX, when I was introduced to a Web Design seminar. Since then, I've taken an interest in designing the look and the feel of a website. 
+								I spend my whole day, practically every day, experimenting with HTML, CSS, and JavaScript; dabbling with frameworks; and inhaling a wide variety of potentially useless information through a few hundred RSS feeds. I build websites that delight and inform. I do it well.
+								I’m curious, and I enjoy digging deep into the psychology behind a user's mind which helps me visualize the user's experience in all of my work.
+						</span></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">filter_2</i>Social Media Officer</div>
+						<div class="collapsible-body"><span>Being a Social Media Officer at my former company has been a huge barrier for my interest in the technology world. It is to understand how social media plays into marketing. It's a tool. Social media is a communication tool in marketing. It makes you accessible to people: those interested in your product and those that don't know your product.
+							</span></div>
+					</li>
+					<li>
+						<div class="collapsible-header"><i class="material-icons">filter_3</i>Wise Words</div>
+						<div class="collapsible-body"><span>I believe that a developer does not have to be an expert in everything, but a developer should demonstrate a natural curiosity by the breadth of their experience. From mobile to web to print, these pieces show just enough of my range of expertise that a client could feel confident about breaking new ground.
+							</span></div>
+					</li>
+				</ul>
+			</div>
+			<div class="col s8">
+				<p id="abtme" class="black-text" style="text-align: center">
+					My name is Rachel but I typically go by Rach. I am a UX Designer enthusiast! After completing the Full Stack Coding Bootcamp Program at UNC, I've finally found what keeps me coding 15+ hours a day and that is my passion for engaging in a user's experience in my application.  I know it comes from my knowledge of fashion and psychology. I am currently in a pause of rebranding my family's fashion company called Griarte. I was Customer Service Lead, Social Media Officer, and Fashion Stylist. I truly enjoyed all of my experience, however, my love for coding has begun and I am looking forward to creating a profession for myself in the Technology field! 
 				</p>
-			</div>
-			<div class="carousel-item black-text" id="two">
-			<h2>User Interface & User Experience</h2>
-			<p class="black-text">I began my passion for coding, specifically the UI/UX, when I was introduced to a Web Design seminar. Since then, I've taken an interest in designing the look and the feel of a website. 
-					I enjoy digging deep into the psychology behind a user's mind which helps me visualize the user's experience in all of my work.</p>
-			</div>
-			<div class="carousel-item black-text" id="three">
-			<h2>Social Media Officer</h2>
-			<p class="black-text">Being a Social Media Officer at my former company has been a huge barrier for my interest in the technology world. It is to understand how social media plays into marketing. It's a tool. Social media is a communication tool in marketing. It makes you accessible to people: those interested in your product and those that don't know your product.</p>
-			</div>
-			<div class="carousel-item black-text" id="four">
-			<h2>Never Stop Learning</h2>
-			<p class="black-text">I believe that a developer does not have to be an expert in everything, but a developer should demonstrate a natural curiosity by the breadth of their experience. From mobile to web to print, these pieces show just enough of my range of expertise that a client could feel confident about breaking new ground.</p>
 			</div>
 		</div>
 		<!-- javascript -->
@@ -52,8 +58,10 @@
 		<!-- Compiled and minified JavaScript -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 		<script type="text/javascript">
-			$('.carousel.carousel-slider').carousel({fullWidth: true});
-		</script>
+			$(document).ready(function(){
+				$('.collapsible').collapsible();
+			});		  
+  		</script>
 		</div>
     </body>
 </html>

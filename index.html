@@ -14,53 +14,57 @@
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
-		<div class="row">
+		<div class="roww">
 			RACHEL <b>GRIARTE</b>
 		</div>
 		<!-- Rachel's About Me Page -->
-		<div class="row1">
+		<div class="z-depth-5" id="row1">
 			<a href="about.html">
 			[ About Me ]
 			</a>
 		</div>
 		<!-- Rachel's Projects Page -->
-		<div class="row2">
+		<div class="z-depth-5" id="row2">
 			<a href="projects.html">
 			[ View My Projects ]
 			</a>
 		</div>			
 		<div class="footer">
 		<!-- Contact Trigger -->
-		<a id="contactme" class="waves-effect waves-light btn modal-trigger" href="#modal1">[ contact , social media ]</a>
+		<p id="contactme" class="btn-flat modal-trigger" href="#modal1">[ contact , social media ]</p>
 		<!--Contact Structure -->
 		<div id="modal1" class="modal bottom-sheet">
 			<div class="modal-content">
-					<a href="#!" class="modal-action modal-close">
-						<i class="material-icons">keyboard_arrow_down</i>
-					</a>					
-				<p><b>Wanna get in touch or talk to me about a project? </b></p>
-				<p> Just fill the form below or send an email to <a href="mailto:rachgriarte@griarte.com" style="color: #26a69a;">rachgriarte@griarte.com</a> and ~lets talk! </p><br>
-			<p>
-			<center>
-				<div class="input-field">
-					<input id="email" type="email" class="validate">
-					<label for="email" data-error="wrong" data-success="right">What is your email ?</label>
+			<div class="row">
+					<div class="col s1">
+						<br>
+						<div class="socialmedia">
+							<a href="https://www.linkedin.com/in/rachelgriarte/" id="smbtn" class="btn tooltipped" data-position="right" data-delay="20" data-tooltip="Connect with me on LinkedIn"><img id=socialmedia src="images/li.jpg"></a>																								
+							<a href="https://www.github.com/rachgriarte/" id="smbtn" class="btn tooltipped" data-position="right" data-delay="20" data-tooltip="Curious to see more of my codes? Click Me!"><img id=socialmedia src="images/gh.jpg"></a>																		
+							<a href="tel:+19196125115" id="smbtn" class="btn tooltipped" data-position="right" data-delay="20" data-tooltip="Need to call me? (1+ 919-612-5115)"><img id=socialmedia src="images/call.jpg"></a>												
+							<a href="https://www.instagram.com/rachgriarte/" id="smbtn" class="btn tooltipped" data-position="right" data-delay="20" data-tooltip="Follow me on IG: rachgriarte"><img id=socialmedia src="images/ig.jpg"></a>												
+							<a id="smbtn" class="btn tooltipped" data-position="right" data-delay="20" data-tooltip="Add me on Snapchat: RAAACHELXX3"><img id=socialmedia src="images/sc.jpg"></a>						
+						</div>
+					</div>				
+					<div class="col s11">
+						<center>
+							<p><b>Wanna get in touch or talk to me about a project? </b></p>
+							<p> Just fill the form to the right or send me an email to <a href="mailto:rachgriarte@griarte.com" style="color: #26a69a;">rachgriarte@griarte.com</a>and ~lets talk! </p>		
+							<br>
+							<div class="input-field">
+								<input id="email" type="email" class="validate">
+								<label for="email" data-error="wrong" data-success="right">What is your email ?</label>
+							</div>
+							<div class="input-field">
+								<i class="material-icons prefix">mode_edit</i>
+								<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
+								<label for="icon_prefix2">Write me a message ... </label>
+								<a id="sendit" class="btn" onclick="Materialize.toast('Your message has been sent!', 2000)">Submit</a>														
+							</div>
+						</center>
+					</div>
 				</div>
-				<div class="input-field">
-					<i class="material-icons prefix">mode_edit</i>
-					<textarea id="icon_prefix2" class="materialize-textarea"></textarea>
-					<label for="icon_prefix2">Write me a message ... </label>
-					<a id="sendit" class="btn" onclick="Materialize.toast('Your message has been sent!', 2000)">Submit</a>
-				</div>
-			</center>
-				<div class="socialmedia">
-					<a href="https://www.linkedin.com/in/rachelgriarte/"><img id=socialmedia src="images/li.jpg"></a>
-					<a href="https://www.github.com/rachgriarte/"><img id=socialmedia src="images/gh.jpg"></a> 
-					<a href="tel:+19196125115"><img id=socialmedia src="images/call.jpg"></a>
-					<a href="https://www.instagram.com/rachgriarte/"><img id=socialmedia src="images/ig.jpg"></a>
-					<img id=socialmedia src="images/sc.jpg">
-				</div>
-			</p>			
+			</div>		
 		</div>
 		<!-- javascript -->
 		<!--Import jQuery before materialize.js-->
@@ -72,6 +76,9 @@
 		<script type="text/javascript">
 		 $(document).ready(function(){
 			$('.modal').modal();
+		});
+		$(document).ready(function(){
+			$('.tooltipped').tooltip({delay: 50});
 		});
 		</script>
 		</body>
