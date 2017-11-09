@@ -4,6 +4,12 @@ html, body {
     font-family: GillSans, Calibri, Trebuchet, sans-serif;
 }
 /* Navigation Bar */
+.navbar {
+    position: fixed;
+    background: white;
+    padding: 2px;
+    top: 0;
+}
 #navbar {
     font-size: 20px;
     color: #074F65;
@@ -14,10 +20,11 @@ html, body {
 }
 /* RACHEL GRIARTE */
 .roww {
+    margin-top: 10px;
     text-align: center;
     color: #074F65;
     font-size: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 20px; 
 }
 /* Rachel's About Me Page */
 #row1 {
@@ -68,7 +75,7 @@ a {
 }
 .material-icons { 
     font-size: 35px; 
-    color: rgb(63, 64, 65);
+    color: #525252;
 }
 .material-icons:hover { 
     color:#074F65;
@@ -81,11 +88,12 @@ a {
 }
 /* social media icon */
 #sendit {
-    background: #26a69a;
-}
-#sendit:hover {
     background: white;
     color: #26a69a;
+}
+#sendit:hover {
+    background: #26a69a;
+    color: #ffffff;
 }
 .socialmedia {
     margin-bottom: 60px;
@@ -101,7 +109,11 @@ a {
     padding: 3px 20px;
 }
 #smbtn:hover {
-    background:#26a69a;
+    background:#87e4db;
+}
+#modal1 {
+    background: rgba(255, 255, 255, 0.7); 
+    padding: 0px 50px;
 }
 /* Email/Message */
 .input-field {
@@ -110,7 +122,7 @@ a {
 }
   /* label color */
 .input-field label {
-    color: #8A8A8A;
+    color: rgb(73, 73, 73);
 }
   /* label focus color */
 .input-field input[type=text]:focus + label {
@@ -138,7 +150,12 @@ a {
 }
 /* //////////////// ABOUT ME PAGE /////////////////// */
 #abtme {
-    margin: 0px 50px;
+    padding: 0px 100px;
+    line-height: 200%;
+}
+tr {
+    font-size: 12px;
+    color: #80683F;
 }
 /* //////////////// PROJECTS PAGE /////////////////// */
 #project{
