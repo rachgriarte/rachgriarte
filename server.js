@@ -21,8 +21,8 @@ app.use(bodyParser.json({
 
 app.use(express.static('apps'));
 
-//gets the HTML file stored in htmlRoute.js so users sees display
-require('/apps/htmlRoutes.js')(app);
+//gets the HTML file storegitd in htmlRoute.js so users sees display
+require('./apps/route/htmlRoutes.js')(app);
 
 //PORT listener
 app.listen(PORT, function () {
